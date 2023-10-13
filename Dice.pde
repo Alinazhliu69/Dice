@@ -12,7 +12,7 @@
          mix = new Die(m, j);
          mix.show();
          mix.roll();
-         nCount = nCount + mix.numDots;
+     //    nCount = nCount + mix.numDots;
 
     
   }
@@ -52,22 +52,26 @@ int dice, diceX, diceY, numDots, diceTop, diceSide;
         fill(((int)(Math.random()*255)), (int)(Math.random()*255), (int)(Math.random()*255));
         if(numDots == 1){
        ellipse(diceX + diceSide/2, diceY + diceSide/2, 5, 5); 
+       nCount = nCount + 1;
         }
         else if(numDots == 2) {
           ellipse(diceX + 3*diceSide/4, diceY + diceSide/4, 5, 5);
           ellipse(diceX + diceSide/4, diceY + 3*diceSide/4, 5, 5);
+          nCount = nCount + 2;
         }
           
           else if(numDots == 3) {
       ellipse(diceX + diceSide/4, diceY + diceSide/4, 5, 5); 
       ellipse(diceX + 3*diceSide/4, diceY + 3*diceSide/4, 5, 5); 
       ellipse(diceX + diceSide/2, diceY + diceSide/2, 5, 5); 
+      nCount = nCount + 3;
         } 
         else if(numDots == 4) {
          ellipse(diceX + diceSide/4, diceY + diceSide/4, 5, 5); 
       ellipse(diceX + 3*diceSide/4, diceY + 3*diceSide/4, 5, 5); 
       ellipse(diceX + 3*diceSide/4, diceY + diceSide/4, 5, 5);
           ellipse(diceX + diceSide/4, diceY + 3*diceSide/4, 5, 5);
+          nCount = nCount + 4;
         } 
         else if(numDots == 5) {
          ellipse(diceX + diceSide/4, diceY + diceSide/4, 5, 5); 
@@ -75,6 +79,7 @@ int dice, diceX, diceY, numDots, diceTop, diceSide;
       ellipse(diceX + 3*diceSide/4, diceY + diceSide/4, 5, 5);
           ellipse(diceX + diceSide/4, diceY + 3*diceSide/4, 5, 5);
                  ellipse(diceX + diceSide/2, diceY + diceSide/2, 5, 5); 
+                 nCount = nCount + 5;
       } 
       else if(numDots == 6) {
          ellipse(diceX + diceSide/4, diceY + diceSide/4, 5, 5); 
@@ -83,6 +88,7 @@ int dice, diceX, diceY, numDots, diceTop, diceSide;
           ellipse(diceX + diceSide/4, diceY + 3*diceSide/4, 5, 5);
         ellipse(diceX + 3*diceSide/4, diceY + diceSide/2, 5, 5); 
       ellipse(diceX + diceSide/4, diceY + diceSide/2, 5, 5); 
+      nCount = nCount + 6;
       }
 
 
